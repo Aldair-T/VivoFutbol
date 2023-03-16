@@ -1,0 +1,219 @@
+/*body{
+    /*background-image: url(Hexagon.svg);
+    background-image: url(estadio.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    background: rgb(0,0,0);
+    background: linear-gradient(130deg, rgba(0,0,0,1) 35%, rgba(87,86,27,1) 100%);
+    background-repeat: no-repeat;
+    overflow: hidden;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+
+.logo{
+    display: block;
+    align-items: center;
+    width: 30px;
+}
+
+header{
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar{
+    padding: 0;
+    font-family: 'IBM Plex Mono', monospace;
+    text-align: end;
+}
+
+
+.navbar-nav a{
+    color: rgba(205, 37, 37, 0.6);
+}
+
+nav .nav-item a:hover {
+    color: blue;
+    text-shadow: 0 0 12px rgba(256, 256, 256, 1);
+}
+
+article{
+    display: grid;
+    grid-template-columns: 800px auto;
+    grid-template-areas: 
+        "descrip imagen"   
+    ;
+}
+
+.descrip {
+    grid-area: descrip;
+    display: flex;
+    color: #677515;
+    font-size: 4.5vw;
+    font-family: 'Tilt Warp', cursive;
+    text-align: center;
+    align-items: center;
+}
+
+.pelota {
+    grid-area: imagen;
+    width: 10rem;
+}
+
+@media (max-width: 900px){
+    article {
+        grid-template-rows: auto 90px;
+        grid-template-areas: 
+            "imagen"
+            "descrip"
+        ;
+    }
+}*/
+
+
+body {
+    /*background: linear-gradient(130deg, rgba(0,0,0,1) 35%, rgba(87,86,27,1) 100%);
+    */
+    /*background: linear-gradient(180deg, #3A8198 2.29%, rgba(9, 255, 0, 0.555) 99.82%);
+    */
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.555) 2.29%, #181a55 99.82%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    height: 100%;
+
+}
+
+.logo{
+    display: block;
+    align-items: center;
+    width: 30px;
+}
+
+header{
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar{
+    padding: 0;
+    font-family: 'Tilt Neon', cursive;
+}
+
+
+.navbar-nav a{
+    color: rgba(0, 0, 0, 1);
+    transition-duration: 0.4s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+
+}
+
+nav .nav-item a:hover {
+    transition: all 0.6s;
+    transform: scale(1.2);
+}
+
+
+
+article {
+    display: grid;
+    justify-items: center;
+}
+
+.contenedor_imagen{
+    width: 60%;
+}
+
+.pelota {
+    width: 100%;
+}
+
+.eslogan{
+    font-family: 'Rubik';
+    font-style: italic;
+    font-size: 20px;
+    text-align: center;
+    letter-spacing: 0.195em;
+    color: #181a55;
+    padding-top: 2rem;
+    margin: 0;
+}
+
+.descrip {
+    font-family: 'Tilt Neon', cursive;
+    font-size: 14px;
+    letter-spacing: -0.02em;
+    text-align: center;
+    padding-top: 0.8rem;
+}
+
+.sep{
+    border: 0; 
+    height: 2px; 
+    background-image: linear-gradient(to right, rgba(256,256,256,0), #5e4949, #000000, #000000, #5e4949 , rgba(256,256,256,0));
+}
+
+.contenedor_logos{
+    text-align: center;
+}
+.logos{
+    margin-top: 1.3rem;
+    margin-bottom: 1.8rem;
+}
+
+@media screen and (min-width: 700px) and (max-width: 1000px) {
+    .contenedor_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contenedor_imagen{
+        width: 80%;
+        margin-top: 3.5rem;
+    }
+    .presentacion{
+        width: 100%;
+        margin-top: 6rem;
+    }
+    .eslogan{
+        font-size: 28px;
+    }
+    .descrip{
+        font-size: 20px;
+    }
+}
+
+@media screen and (min-width: 1001px) and (max-width:1440px){
+    .contenedor_grid{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+    .contenedor_imagen{
+        width: 80%;
+        margin-top: 1rem;
+    }
+    .presentacion{
+        width: 100%;
+        margin-top: 6rem;
+    }
+    .eslogan{
+        font-size: 35px;
+    }
+    .descrip{
+        font-size: 29px;
+    }
+    .logos{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width: 576px){
+    nav .nav-item a:hover {
+        transition: all 0.6s;
+        transform: scale(1);
+    }
+}

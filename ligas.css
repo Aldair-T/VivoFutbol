@@ -1,0 +1,40 @@
+body{
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.555) 2.29%, #181a55 99.82%);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    overflow: auto;
+    height: 100%;
+}
+
+
+
+header{
+    z-index: 100;
+    width: 100%;
+}
+
+.navbar{
+    padding: 0;
+    font-family: 'Tilt Neon', cursive;
+}
+
+.navbar-nav a, .nav_link{
+    color: rgba(0, 0, 0, 1);
+    transition-duration: 0.4s;
+    -webkit-transition-property: transform;
+    transition-property: transform;
+
+}
+
+nav .nav-item a:hover, .nav-link:hover{
+    transition: all 0.6s;
+    transform: scale(1.2);
+}
+
+@media screen and (max-width: 576px){
+    nav .nav-item a:hover, .nav-link:hover{
+        transition: all 0.6s;
+        transform: scale(1);
+    }
+}
